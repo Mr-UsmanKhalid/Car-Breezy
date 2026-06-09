@@ -14,7 +14,7 @@
     const link = document.createElement('link');
     link.id   = 'cb-hero-styles';
     link.rel  = 'stylesheet';
-    link.href = './src/styles/hero.css';
+    link.href = '../styles/hero.css';
     document.head.appendChild(link);
   }
 

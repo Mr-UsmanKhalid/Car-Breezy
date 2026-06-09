@@ -7,7 +7,7 @@
     const link = document.createElement('link');
     link.id   = 'cb-research-styles';
     link.rel  = 'stylesheet';
-    link.href = './src/styles/research.css';
+    link.href = '../styles/research.css';
     document.head.appendChild(link);
   }
 

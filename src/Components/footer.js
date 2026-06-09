@@ -1,7 +1,7 @@
 /**
  * CarBreezy Footer Component
  * Usage: place <div id="carbreezy-footer"></div> in your HTML,
- * then load footer.js — it auto-loads its CSS from ./src/Styles/footer.css
+ * then load footer.js — it auto-loads its CSS from ../Styles/footer.css
  */
 
 (function () {
@@ -9,7 +9,7 @@
   const link = document.createElement("link");
   link.rel  = "stylesheet";
   link.type = "text/css";
-  link.href = "./src/styles/footer.css";
+  link.href = "../styles/footer.css";
   document.head.appendChild(link);
 
   // ── Ticker + Visitor Styles ────────────────────────────────────

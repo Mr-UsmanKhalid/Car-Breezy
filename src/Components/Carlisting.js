@@ -683,7 +683,7 @@ $(document).ready(function () {
   function loadCSS(){
     const link = document.createElement('link');
     link.rel   = 'stylesheet';
-    link.href  = './src/styles/Carlisting.css';
+    link.href  = '../styles/Carlisting.css';
     document.head.appendChild(link);
   }
 

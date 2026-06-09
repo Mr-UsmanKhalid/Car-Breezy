@@ -7,7 +7,7 @@
     const link = document.createElement('link');
     link.id   = 'cb-navbar-styles';
     link.rel  = 'stylesheet';
-    link.href = './src/styles/navbar.css';
+    link.href = '../styles/navbar.css';
     document.head.appendChild(link);
   }
 
