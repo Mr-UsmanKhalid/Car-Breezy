@@ -147,7 +147,7 @@
     ══════════════════════════════ */
     const brands = [
       { name: 'Porsche',     img: './Images/logo/Porsche_logo.png',     title: 'Porsche P911',         text: 'German performance with luxury comfort.',                              car: './Images/hero/porscheS.png' },
-      { name: 'Mercedes',    img: './Images/logo/Mercedes_logo.png',    title: 'Mercedes AMG GT 63s',  text: 'Luxury and performance with Mercedes Benz AMG.',                      car: './Images/hero/mercedess.png' },
+      { name: 'Mercedes',    img: './Images/logo/Mercedes_Logo.png',    title: 'Mercedes AMG GT 63s',  text: 'Luxury and performance with Mercedes Benz AMG.',                      car: './Images/hero/mercedess.png' },
       { name: 'Lamborghini', img: './Images/logo/Lamborghini_logo.png', title: 'Lamborghini',          text: 'Experience the thrill of Lamborghini for unmatched performance.',     car: './Images/hero/lamborghiniS.png' },
       { name: 'Tesla',       img: './Images/logo/Tesla_logo.png',       title: 'Tesla',                text: 'Experience the future of driving with Tesla.',                        car: './Images/hero/TeslaS.png' },
       { name: 'Camaro',      img: './Images/logo/chervelote logo.png',  title: 'Chevrolet Camaro',     text: 'Stand out with the Camaro for iconic style and performance.',          car: './Images/hero/cherveloteS.png' },
