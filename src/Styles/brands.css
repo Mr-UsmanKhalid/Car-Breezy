@@ -1,0 +1,124 @@
+/* ══════════════════════════════════════
+   BRANDS SECTION
+══════════════════════════════════════ */
+.br-section {
+  background: #000000;
+  box-shadow: #000000 0px 2px 8px -2px inset;
+  padding: 60px 24px;
+}
+
+.br-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* ── Header ── */
+.br-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.br-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+
+.br-sub {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ── Grid ── */
+.br-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+/* ── Card ── */
+.br-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background .25s, border-color .25s, transform .25s;
+}
+
+.br-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* ── Logo ── */
+.br-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* ── Text ── */
+.br-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.br-count {
+  font-size: 0.68rem;
+  color: #ffffff;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .br-inner { padding: 0 40px; }
+  .br-grid  { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 992px) {
+  .br-section { padding: 64px 35px; }
+  .br-inner   { padding: 0 32px; }
+  .br-grid    { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+
+@media (max-width: 768px) {
+  .br-section { padding: 52px 0; }
+  .br-inner   { padding: 0 20px; }
+  .br-title   { font-size: 1.6rem; }
+  .br-grid    { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .br-card    { padding: 18px 12px 14px; border-radius: 12px; }
+  .br-logo    { width: 40px; height: 40px; }
+}
+
+@media (max-width: 480px) {
+  .br-section { padding: 44px 0; }
+  .br-inner   { padding: 0 14px; }
+  .br-grid    { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .br-card    { padding: 14px 10px 12px; border-radius: 10px; }
+  .br-logo    { width: 34px; height: 34px; }
+  .br-name    { font-size: 0.70rem; }
+  .br-count   { font-size: 0.62rem; }
+}
+
+@media (max-width: 360px) {
+  .br-inner { padding: 0 10px; }
+  .br-grid  { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+}

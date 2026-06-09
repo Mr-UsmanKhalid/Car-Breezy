@@ -1,0 +1,343 @@
+/* import font style */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.hero-section {
+    background: linear-gradient(10deg, #111010 0%, #080e1a 25%, #0d1b2a 55%, #0a1a12 100%);
+    min-height: 100vh;
+    padding-top: 70px;
+    color: #ffffff;
+}
+
+.hero-content {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content .row {
+    width: 100%;
+    align-items: center;
+}
+
+/* New Content  */
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #0d0d0d;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 11px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-btn-primary:hover {
+  background: #f0ede8;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(255,255,255,0.15);
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.84rem;
+  font-weight: 500;
+  padding: 11px 22px;
+  border-radius: 100px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  cursor: pointer;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.hero-btn-secondary:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.06);
+  text-decoration: none;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,0.08);
+}
+
+
+/* TITLE */
+#heroTitle {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+#heroText {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 490px;
+}
+
+/* TEXT ANIMATION */
+#heroTitle,
+#heroText {
+    transition: all .6s ease;
+}
+
+.text-hide {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+.text-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CAR */
+.car-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.car-img {
+    width: 100%;
+    max-width: 850px;
+}
+
+/* CAR ANIMATION */
+.slide-left-out {
+    animation: slideLeftOut .7s forwards;
+}
+
+.slide-right-in {
+    animation: slideRightIn .7s forwards;
+}
+
+@keyframes slideLeftOut {
+    from { transform: translateX(0);      opacity: 1; }
+    to   { transform: translateX(-300px); opacity: 0; }
+}
+
+@keyframes slideRightIn {
+    from { transform: translateX(300px);  opacity: 0; }
+    to   { transform: translateX(0);      opacity: 1; }
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+ 
+}
+
+@media (max-width: 767px) {
+
+    
+}
+
+
+
+/* ── ========================= BRAND CAROUSEL ======================== ── */
+.bc-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 0 40px;
+}
+
+.bc-arrow {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: color .3s;
+    padding: 0;
+}
+
+.bc-arrow:active { transform: scale(0.95); }
+
+.bc-viewport {
+    overflow: hidden;
+    position: relative;
+    width: 378px;
+}
+
+.bc-track {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    will-change: transform;
+    touch-action: pan-y;
+}
+
+.bc-item {
+    flex-shrink: 0;
+    width: 50px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.bc-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    opacity: 0.4;
+    transition: transform .4s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Active — glow traces logo shape, no box */
+.bc-item.active img {
+    opacity: 1;
+    transform: scale(1.80);
+}
+
+/* Hover on non-active */
+.bc-item:not(.active):hover img {
+    opacity: 0.75;
+}
+
+/* ── TABLET ── */
+@media (max-width: 992px) {
+
+    .hero-section  { padding-top: 20px; }
+    .hero-content  { text-align: center; }
+    #heroText      { margin: 0 auto; }
+    .car-wrapper   { margin-top: 30px; }
+
+         .hero-cta-row  { justify-content: center;  }
+  .hero-stats    { justify-content: center; }
+  .hero-section {
+    justify-items: center;
+  }
+    .bc-viewport{
+    padding: 30px 0px;
+  }
+
+    .bc-viewport   { width: 318px; }
+    .bc-track      { gap: 22px; }
+
+    .bc-item       { width: 44px; height: 75px; }
+    .bc-item img   { width: 44px; height: 44px; }
+
+
+
+}
+
+/* ── MOBILE ── */
+@media (max-width: 767px) {
+
+    #heroTitle     { font-size: 2.2rem; }
+    #heroText      { font-size: 0.95rem; }
+    .car-img       { max-width: 100%; }
+
+  .hero-cta-row  { justify-content: center; gap: 10px; }
+  .hero-stat-num { font-size: 1.2rem; }
+  .hero-stat-divider { display: none; }
+
+  .bc-viewport{
+    padding: 22px 0px;
+  }
+
+    .bc-wrap       { gap: 10px; padding: 10px 0 30px; }
+    .bc-viewport   { width: 246px; }
+    .bc-track      { gap: 16px; }
+
+    .bc-item       { width: 38px; height: 38px; }
+    .bc-item img   { width: 38px; height: 38px; }
+
+    .bc-arrow      { width: 28px; height: 28px; }
+
+    
+}
+
+
+@media (max-width: 670px) {
+    .hero-content {
+        padding-top: 90px;
+        justify-content: center;
+        align-content: center;
+    }
+.bc-wrap{
+    padding-top: 28px;
+  }
+}
+
+
+@media (max-width: 400px) {
+    .hero-content {
+        justify-content: center;
+        align-content: center;
+    }
+.bc-wrap{
+    padding-top: 0px;
+  }
+}

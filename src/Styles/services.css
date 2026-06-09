@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --sv-bg:          #f7f6f3;
+  --sv-card-bg:     #ffffff;
+  --sv-ink:         #0d0d0d;
+  --sv-ink-mid:     #555550;
+  --sv-ink-soft:    #aaa9a3;
+  --sv-accent-warm: #00d4ff;
+  --sv-border:      #e4e2dc;
+  --sv-radius:      12px;
+  --sv-pad-x:       72px;
+  --sv-ease:        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Section ── */
+.services-section {
+  padding: 64px var(--sv-pad-x) 80px;
+  background: var(--sv-bg);
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.services-section > * { position: relative; z-index: 1; }
+
+/* ── Header ── */
+.services-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  gap: 12px;
+}
+
+.services-header-left { display: flex; flex-direction: column; gap: 6px; }
+
+.services-eyebrow {
+  font-family: 'Syne', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sv-accent-warm);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.services-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--sv-accent-warm);
+}
+
+.services-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: var(--sv-ink);
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.services-count-badge {
+  font-family: 'Syne', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sv-ink-soft);
+  border: 1px solid var(--sv-border);
+  border-radius: 100px;
+  padding: 5px 13px;
+  white-space: nowrap;
+  margin-bottom: 3px;
+}
+
+/* ── Grid — 3 equal compact columns ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ── Card — fixed compact size ── */
+.service-card {
+  background: var(--sv-card-bg);
+  border: 1px solid var(--sv-border);
+  border-radius: var(--sv-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: box-shadow 0.3s var(--sv-ease),
+              transform  0.3s var(--sv-ease),
+              border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.11), 0 3px 10px rgba(0,0,0,0.06);
+  transform: translateY(-5px);
+  border-color: #ccc9c0;
+}
+
+/* Number badge */
+.service-card-num {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  font-family: 'Syne', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: rgba(13,13,13,0.52);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 5px;
+  padding: 3px 8px;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+/* ── Image: 3/2 ratio — wide & compact, NOT 1:1 tall ── */
+.service-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 6 / 4;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.service-card-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.22) 100%);
+  pointer-events: none;
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--sv-ease);
+}
+
+.service-card:hover .service-card-img { transform: scale(1.05); }
+
+/* ── Card Body — compact ── */
+.service-card-body {
+  padding: 14px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.service-card-category {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sv-accent-warm);
+}
+
+.service-card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--sv-ink);
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.service-card-text {
+  font-size: 0.75rem;
+  color: var(--sv-ink-mid);
+  line-height: 1.55;
+  margin: 0;
+  font-weight: 300;
+  flex: 1;
+  /* clamp to 2 lines max */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Card Footer ── */
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid var(--sv-border);
+  gap: 8px;
+}
+
+.service-card-price {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--sv-ink);
+  letter-spacing: -0.02em;
+}
+
+.service-card-price span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--sv-ink-soft);
+}
+
+.service-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--sv-ink);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.25s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.service-card-btn::after {
+  content: '→';
+  transition: transform 0.2s ease;
+}
+
+.service-card-btn:hover { background: var(--sv-accent-warm); }
+.service-card-btn:hover::after { transform: translateX(3px); }
+.service-card-btn:active { transform: scale(0.96); }
+
+/* ── Fade-up on load ── */
+@keyframes sv-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.service-card { animation: sv-up 0.45s ease both; }
+.service-card:nth-child(1) { animation-delay: 0.05s; }
+.service-card:nth-child(2) { animation-delay: 0.13s; }
+.service-card:nth-child(3) { animation-delay: 0.21s; }
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+
+/* ≤ 1100px */
+@media (max-width: 1100px) {
+  :root { --sv-pad-x: 48px; }
+}
+
+/* ≤ 900px — iPad: 1 col, landscape card, side padding */
+@media (max-width: 900px) {
+  :root { --sv-pad-x: 36px; }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 14px;
+  }
+
+  /* Landscape layout: square image left, body right */
+  .service-card {
+    flex-direction: row;
+    min-height: unset;
+  }
+
+  .service-card-img-wrap {
+    width: 160px;
+    min-width: 160px;
+    aspect-ratio: 1 / 1;   /* square thumb on tablet */
+    flex-shrink: 0;
+  }
+
+  .service-card-img-wrap::after {
+    background: linear-gradient(to right, transparent 55%, rgba(0,0,0,0.1) 100%);
+  }
+
+  .service-card-body { padding: 14px 16px 14px; }
+  .service-card-text { -webkit-line-clamp: 3; }
+}
+
+/* ≤ 680px */
+@media (max-width: 680px) {
+  :root { --sv-pad-x: 22px; }
+  .services-grid { max-width: 100%; }
+  .service-card-img-wrap { width: 140px; min-width: 140px; }
+}
+
+/* ≤ 520px — Mobile: vertical square card */
+@media (max-width: 520px) {
+  :root { --sv-pad-x: 16px; }
+
+  .services-section { padding: 48px var(--sv-pad-x) 60px; }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 26px;
+    gap: 8px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 14px;
+  }
+
+  /* Back to vertical on mobile */
+  .service-card {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .service-card-img-wrap {
+    width: 100%;
+    min-width: unset;
+    aspect-ratio: 3 / 2;   /* compact wide image, not tall 1:1 */
+  }
+
+  .service-card-img-wrap::after {
+    background: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.22) 100%);
+  }
+
+  .service-card-body { padding: 12px 14px 14px; }
+}
+
+/* ≤ 360px */
+@media (max-width: 360px) {
+  :root { --sv-pad-x: 12px; }
+  .service-card-btn { padding: 5px 10px; font-size: 0.72rem; }
+}

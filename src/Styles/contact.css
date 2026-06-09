@@ -1,0 +1,372 @@
+/* ========================================
+   CARBREEZY CONTACT SECTION
+======================================== */
+
+:root {
+    --primary:  #00d4ff;
+    --secondary: #00ff9d;
+    --text:      #ffffff;
+    --text-muted: #9ca3af;
+    --card-bg:   rgba(255, 255, 255, .04);
+    --card-border: rgba(255, 255, 255, .08);
+}
+
+/* ========================================
+   SECTION
+======================================== */
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #080e1a 25%,
+        #0d1b2a 55%,
+        #0a1a12 100%
+    );
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, .07);
+    filter: blur(140px);
+    top: -160px;
+    left: -100px;
+    pointer-events: none;
+}
+
+.contact-section::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(0, 255, 157, .07);
+    filter: blur(140px);
+    bottom: -160px;
+    right: -100px;
+    pointer-events: none;
+}
+
+/* ── Inner wrapper — full width with side padding ── */
+.contact-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 16px;
+    padding: 4px 14px;
+    border: 1px solid rgba(0, 212, 255, .2);
+    border-radius: 50px;
+    background: rgba(0, 212, 255, .06);
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+}
+
+.section-title .highlight {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    line-height: 1.75;
+    font-size: 0.95rem;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   LAYOUT — full width two columns
+======================================== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ========================================
+   GLASS CARDS
+======================================== */
+.form-side,
+.info-side {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 36px 32px;
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+
+.form-side:hover,
+.info-side:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 212, 255, .22);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, .07);
+}
+
+/* ========================================
+   FORM
+======================================== */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, .75);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.form-input {
+    width: 100%;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 0.88rem;
+    transition: border-color .25s, box-shadow .25s;
+}
+
+.form-input::placeholder { color: #4b5563; }
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, .1);
+}
+
+.form-textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+.send-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #061017;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: transform .25s, box-shadow .25s, opacity .25s;
+}
+
+.send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 212, 255, .28);
+    opacity: 0.92;
+}
+
+/* ========================================
+   SUCCESS MESSAGE
+======================================== */
+.success-msg {
+    display: none;
+    margin-top: 12px;
+    color: #00ff9d;
+    padding: 12px;
+    text-align: center;
+    background: rgba(0, 255, 157, .08);
+    border: 1px solid rgba(0, 255, 157, .2);
+    border-radius: 10px;
+    font-size: 0.88rem;
+}
+
+/* ========================================
+   INFO SIDE
+======================================== */
+.info-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    flex-shrink: 0;
+}
+
+.info-icon i {
+    color: #061017;
+    font-size: 1rem;
+}
+
+.info-title {
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.info-text {
+    color: var(--text-muted);
+    font-size: 0.83rem;
+    line-height: 1.6;
+}
+
+/* ========================================
+   HOURS CARD
+======================================== */
+.hours-card {
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 4px;
+}
+
+.hours-title {
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+.hours-row span:first-child { color: rgba(255,255,255,.6); }
+
+.hours-row.closed span:last-child { color: #ff6b6b; }
+
+/* ========================================
+   LARGE DESKTOP (≥1400px)
+======================================== */
+@media (min-width: 1400px) {
+    .contact-inner { padding: 0 80px; }
+}
+
+/* ========================================
+   TABLET LANDSCAPE (≤1200px)
+======================================== */
+@media (max-width: 1200px) {
+    .contact-inner { padding: 0 40px; }
+    .contact-layout { grid-template-columns: 1.2fr 0.8fr; gap: 20px; }
+}
+
+/* ========================================
+   TABLET (≤992px) — stack columns
+======================================== */
+@media (max-width: 992px) {
+    .contact-section  { padding: 80px 0; }
+    .contact-inner    { padding: 0 32px; }
+    .contact-layout   { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
+    .contact-header   { margin-bottom: 48px; }
+    .form-side,
+    .info-side        { padding: 28px 26px; }
+}
+
+/* ========================================
+   MOBILE (≤768px)
+======================================== */
+@media (max-width: 768px) {
+    .contact-section  { padding: 64px 0; }
+    .contact-inner    { padding: 0 20px; }
+    .contact-header   { margin-bottom: 36px; }
+    .form-row         { grid-template-columns: 1fr; gap: 0; }
+    .form-side,
+    .info-side        { padding: 22px 20px; border-radius: 16px; }
+}
+
+/* ========================================
+   SMALL MOBILE (≤480px)
+======================================== */
+@media (max-width: 480px) {
+    .contact-section  { padding: 52px 0; }
+    .contact-inner    { padding: 0 14px; }
+    .section-title    { font-size: 1.7rem; }
+    .section-subtitle { font-size: 0.88rem; }
+    .form-side,
+    .info-side        { padding: 18px 16px; border-radius: 14px; }
+    .form-input       { padding: 10px 12px; font-size: 0.85rem; }
+    .form-textarea    { min-height: 110px; }
+    .info-icon        { width: 40px; height: 40px; min-width: 40px; border-radius: 10px; }
+    .info-title       { font-size: 0.88rem; }
+    .info-text        { font-size: 0.80rem; }
+    .hours-row        { font-size: 0.78rem; }
+}
+
+/* ========================================
+   EXTRA SMALL (≤360px)
+======================================== */
+@media (max-width: 360px) {
+    .contact-inner    { padding: 0 10px; }
+    .section-title    { font-size: 1.5rem; }
+    .form-side,
+    .info-side        { padding: 16px 14px; }
+}

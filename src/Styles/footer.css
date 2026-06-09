@@ -1,0 +1,385 @@
+/* ===== CarBreezy Footer ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.carbreezy-footer {
+  background-color: #080808;
+  color: #c8c8c8;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== Marquee Brand Strip ===== */
+.footer-marquee-wrapper {
+  border-bottom: 1px solid #1e1e1e;
+  overflow: hidden;
+  position: relative;
+  padding: 14px 0;
+}
+
+.footer-marquee-wrapper::before,
+.footer-marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.footer-marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #080808, transparent);
+}
+
+.footer-marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #080808, transparent);
+}
+
+.footer-marquee-track {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.footer-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.footer-marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 36px;
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.footer-marquee-item:hover {
+  color: #e0e0e0;
+}
+
+.footer-marquee-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #333;
+  flex-shrink: 0;
+}
+
+/* ===== Main Footer Body ===== */
+.footer-body {
+  padding: 60px 48px 52px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Brand Column */
+.footer-brand-col {}
+
+.footer-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.footer-logo span {
+  color: #4a90d9;
+}
+
+.footer-tagline {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #5a5a5a;
+  max-width: 230px;
+}
+
+/* Column Headings */
+.footer-col-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+/* Nav Links */
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-list li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  display: inline-block;
+}
+
+.footer-nav-list li a:hover {
+  color: #d8d8d8;
+  padding-left: 5px;
+}
+
+/* Info Column */
+.footer-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.footer-info-icon {
+  width: 30px;
+  height: 30px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-info-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #666;
+}
+
+.footer-info-label {
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+.footer-info-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: #d8d8d8;
+}
+
+.footer-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #3ecf5a;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: 0 0 6px #3ecf5a88;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+/* ===== Footer Bottom Bar ===== */
+.footer-bottom {
+  border-top: 1px solid #161616;
+  padding: 18px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 12.5px;
+  color: #333;
+  letter-spacing: 0.03em;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-legal-links li a {
+  text-decoration: none;
+  font-size: 12.5px;
+  color: #858484;
+  transition: color 0.25s ease;
+  letter-spacing: 0.02em;
+}
+
+.footer-legal-links li a:hover {
+  color: #aaa;
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (max-width: 900px) {
+  .footer-body {
+    grid-template-columns: 1fr 1fr;
+    padding: 48px 32px 40px;
+    gap: 36px 28px;
+  }
+
+  .footer-brand-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer-tagline {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 18px 32px;
+  }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 560px) {
+  .footer-body {
+    grid-template-columns: 1fr;
+    padding: 40px 22px 36px;
+    gap: 32px;
+  }
+
+  .footer-marquee-item {
+    padding: 0 24px;
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    padding: 16px 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-legal-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+/*  SCROLLING TICKER */
+    .footer-ticker-wrapper {
+      background: #111;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 6px 0;
+      position: relative;
+    }
+
+    /* Red "LIVE" badge pinned on the left */
+    .footer-ticker-wrapper::before {
+      content: "● LIVE";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      background: #2a6fbe;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      z-index: 2;
+    }
+
+    /* Fade edges */
+    .footer-ticker-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 60px;
+      background: linear-gradient(to right, transparent, #111);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .footer-ticker-track {
+      display: inline-flex;
+      align-items: center;
+      animation: ticker-scroll 40s linear infinite;
+      padding-left: 70px; /* clear the LIVE badge */
+    }
+
+    .footer-ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    .footer-ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #e0e0e0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      padding: 0 28px;
+    }
+
+    .footer-ticker-item .ticker-icon {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    .footer-ticker-item .ticker-label {
+      color: #888;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-right: 4px;
+    }
+
+    .footer-ticker-item .ticker-value {
+      color: #40a4f0;
+      font-weight: 600;
+    }
+
+    /* Separator dot between items */
+    .footer-ticker-sep {
+      color: #444;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0 4px;
+    }
+
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }

@@ -1,0 +1,335 @@
+/* ═══════════════════════════════════════════
+   RESEARCH / SEARCH DROPDOWN (RESPONSIVE)
+   File: src/Styles/research.css
+   Depends on: navbar.css (for .cb-search-wrap)
+═══════════════════════════════════════════ */
+
+/* ── Dropdown container ── */
+.cb-research-dropdown {
+  position:        absolute;
+  top:             calc(100% + 8px);
+  left:            50%;
+  transform:       translateX(-50%);
+  width:           420px;
+  max-height:      0;
+  overflow:        hidden;
+  background:      #ffffff;
+  border-radius:   14px;
+  box-shadow:      0 8px 32px rgba(0, 0, 0, 0.18),
+                   0 2px 8px  rgba(0, 0, 0, 0.08);
+  border:          1px solid rgba(0, 0, 0, 0.07);
+  z-index:         999;
+  opacity:         0;
+  transition:      max-height 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+                   opacity    0.22s ease;
+  pointer-events:  none;
+}
+
+.cb-research-dropdown.open {
+  max-height:     540px;
+  opacity:        1;
+  pointer-events: auto;
+  overflow-y:     auto;
+}
+
+/* custom scrollbar */
+.cb-research-dropdown::-webkit-scrollbar { width: 4px; }
+.cb-research-dropdown::-webkit-scrollbar-track { background: transparent; }
+.cb-research-dropdown::-webkit-scrollbar-thumb { background: rgba(0,0,0,.15); border-radius: 4px; }
+
+/* ── Header label ── */
+.cb-research-dropdown::before {
+  content:        'Results';
+  display:        block;
+  font-size:      10px;
+  font-weight:    600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          #aaa;
+  padding:        12px 14px 6px;
+}
+
+/* ── Single result row ── */
+.cb-research-item {
+  display:        flex;
+  align-items:    center;
+  gap:            12px;
+  padding:        10px 14px;
+  cursor:         pointer;
+  border-radius:  0;
+  transition:     background 0.14s ease;
+  outline:        none;
+}
+
+.cb-research-item:first-of-type { border-radius: 0; }
+.cb-research-item:last-of-type  { border-radius: 0 0 14px 14px; }
+
+.cb-research-item:hover,
+.cb-research-item:focus {
+  background: #f5f5f7;
+}
+
+/* divider between items */
+.cb-research-item + .cb-research-item {
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+/* ── Thumbnail ── */
+.cb-research-thumb {
+  width:         62px;
+  height:        44px;
+  object-fit:    cover;
+  border-radius: 8px;
+  flex-shrink:   0;
+  background:    #eee;
+}
+
+/* ── Text info ── */
+.cb-research-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cb-research-name {
+  font-size:      14px;
+  font-weight:    400;
+  color:          #111;
+  white-space:    nowrap;
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+  line-height:    1.3;
+}
+
+.cb-research-name strong {
+  font-weight: 600;
+}
+
+.cb-research-meta {
+  font-size:    11.5px;
+  color:        #888;
+  margin-top:   2px;
+  white-space:  nowrap;
+  overflow:     hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Right column ── */
+.cb-research-right {
+  display:        flex;
+  flex-direction: column;
+  align-items:    flex-end;
+  gap:            3px;
+  flex-shrink:    0;
+}
+
+.cb-research-price {
+  font-size:   14px;
+  font-weight: 600;
+  color:       #111;
+  white-space: nowrap;
+}
+
+.cb-research-save {
+  font-size:  11px;
+  color:      #1a8a4a;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ── Status badge ── */
+.cb-research-badge {
+  display:       inline-block;
+  font-size:     10px;
+  font-weight:   600;
+  letter-spacing: 0.04em;
+  padding:       2px 7px;
+  border-radius: 20px;
+  white-space:   nowrap;
+}
+
+.cb-research-badge.new {
+  background: #e8f5e9;
+  color:      #2e7d32;
+}
+
+.cb-research-badge.used {
+  background: #fff3e0;
+  color:      #e65100;
+}
+
+/* ── Empty state ── */
+.cb-research-empty {
+  padding:    18px 14px;
+  font-size:  13px;
+  color:      #999;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+═══════════════════════════════════════════ */
+ 
+
+/* ── MOBILE: < 600px ── */
+@media (max-width: 599px) {
+  .cb-research-dropdown {
+    position:       fixed;
+    bottom:         auto;
+    left:           0;
+    right:          0;
+    width:          100%;
+    transform:      none;
+    max-height:     calc(100vh - 80px);
+    border-radius:  20px;
+    box-shadow:     0 -8px 32px rgba(0, 0, 0, 0.25),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    z-index:        1;
+  }
+ 
+  .cb-research-dropdown.open {
+    max-height: calc(100vh - 80px);
+  }
+ 
+  .cb-research-item {
+    padding:  12px 16px;
+    gap:      14px;
+  }
+ 
+  .cb-research-item:first-of-type {
+    border-radius: 0;
+    padding-top: 16px;
+  }
+ 
+  .cb-research-item:last-of-type {
+    border-radius: 0;
+    padding-bottom: 20px;
+  }
+ 
+  .cb-research-thumb {
+    width:         54px;
+    height:        38px;
+  }
+ 
+  .cb-research-name {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+ 
+  .cb-research-meta {
+    font-size: 10.5px;
+    margin-top: 3px;
+  }
+ 
+  .cb-research-right {
+    gap: 4px;
+  }
+ 
+  .cb-research-price {
+    font-size: 13px;
+  }
+ 
+  .cb-research-save {
+    font-size: 10px;
+  }
+ 
+  .cb-research-badge {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+ 
+  .cb-research-dropdown::before {
+    padding: 16px 16px 8px;
+    font-size: 9px;
+  }
+ 
+  .cb-research-empty {
+    padding: 24px 16px;
+    font-size: 13px;
+  }
+}
+ 
+
+/* ── TABLET: 600px - 1024px ── */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .cb-research-dropdown {
+    width:           calc(100vw - 80px);
+    max-width:       520px;
+    max-height:      480px;
+    left:            50%;
+    transform:       translateX(-50%);
+    border-radius:   14px;
+    position:        absolute;
+    top:             calc(100% + 8px);
+    bottom:          auto;
+  }
+
+  .cb-research-dropdown.open {
+    max-height: 480px;
+  }
+
+  .cb-research-item {
+    padding: 11px 14px;
+  }
+
+  .cb-research-thumb {
+    width:  58px;
+    height: 42px;
+  }
+
+  .cb-research-name {
+    font-size: 13px;
+  }
+
+  .cb-research-meta {
+    font-size: 11px;
+  }
+
+  .cb-research-price {
+    font-size: 13px;
+  }
+}
+
+/* ── DESKTOP: > 1024px ── */
+@media (min-width: 1025px) {
+  .cb-research-dropdown {
+    width:      420px;
+    max-height: 540px;
+  }
+}
+
+/* ── Dark-mode override ── */
+@media (prefers-color-scheme: dark) {
+  .cb-research-dropdown {
+    background:  #1c1c1e;
+    border-color: rgba(255,255,255,0.1);
+    box-shadow:  0 8px 32px rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 599px) {
+    .cb-research-dropdown {
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.5),
+                  inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+  }
+
+  .cb-research-item:hover,
+  .cb-research-item:focus {
+    background: #2c2c2e;
+  }
+
+  .cb-research-item + .cb-research-item {
+    border-top-color: rgba(255,255,255,0.06);
+  }
+
+  .cb-research-name  { color: #f0f0f0; }
+  .cb-research-meta  { color: #888; }
+  .cb-research-price { color: #f0f0f0; }
+
+  .cb-research-badge.new  { background: #1b3a1f; color: #6fcf7f; }
+  .cb-research-badge.used { background: #3a2000; color: #ffb74d; }
+
+  .cb-research-dropdown::before { color: #555; }
+  .cb-research-empty { color: #666; }
+}
+
+
