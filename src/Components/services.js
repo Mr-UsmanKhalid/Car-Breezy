@@ -5,7 +5,7 @@
     const link = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = '../styles/services.css';
+    link.href = './src/styles/services.css';
     document.head.appendChild(link);
   }
 

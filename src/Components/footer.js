@@ -9,7 +9,7 @@
   const link = document.createElement("link");
   link.rel  = "stylesheet";
   link.type = "text/css";
-  link.href = "../styles/footer.css";
+  link.href = "./src/styles/footer.css";
   document.head.appendChild(link);
 
   // ── Ticker + Visitor Styles ────────────────────────────────────
