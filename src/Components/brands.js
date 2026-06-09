@@ -6,18 +6,18 @@
 (function () {
 
   const brands = [
-    { name: 'BMW',           count: 24, logo: './Image/logo/bmw_logo.png' },
-    { name: 'Mercedes-Benz', count: 18, logo: './Image/logo/Mercedes_logo.png' },
-    { name: 'Porsche',       count: 8,  logo: './Image/logo/Porsche_logo.png' },
-    { name: 'Mclaren',       count: 14, logo: './Image/logo/Mclaren_logo.png' },
-    { name: 'Lamborghini',   count: 4,  logo: './Image/logo/Lamborghini_logo.png' },
-    { name: 'Honda',         count: 21, logo: './Image/logo/honda_logo.png' },
-    { name: 'Toyota',        count: 32, logo: './Image/logo/Toyota_logo.png' },
-    { name: 'Tesla',         count: 8,  logo: './Image/logo/Tesla_logo.png' },
-    { name: 'Nissan',        count: 17, logo: './Image/logo/Nissan_logo.png' },
-    { name: 'Ferrari',       count: 3,  logo: './Image/logo/Ferrari_logo.png' },
-    { name: 'Audi',          count: 15, logo: './Image/logo/audi_logo.png' },
-    { name: 'Bugatti',       count: 2,  logo: './Image/logo/Bugatti_logo.png' },
+    { name: 'BMW',           count: 24, logo: './Images/logo/bmw_logo.png' },
+    { name: 'Mercedes-Benz', count: 18, logo: './Images/logo/Mercedes_logo.png' },
+    { name: 'Porsche',       count: 8,  logo: './Images/logo/Porsche_logo.png' },
+    { name: 'Mclaren',       count: 14, logo: './Images/logo/Mclaren_logo.png' },
+    { name: 'Lamborghini',   count: 4,  logo: './Images/logo/Lamborghini_logo.png' },
+    { name: 'Honda',         count: 21, logo: './Images/logo/honda_logo.png' },
+    { name: 'Toyota',        count: 32, logo: './Images/logo/Toyota_logo.png' },
+    { name: 'Tesla',         count: 8,  logo: './Images/logo/Tesla_logo.png' },
+    { name: 'Nissan',        count: 17, logo: './Images/logo/Nissan_logo.png' },
+    { name: 'Ferrari',       count: 3,  logo: './Images/logo/Ferrari_logo.png' },
+    { name: 'Audi',          count: 15, logo: './Images/logo/audi_logo.png' },
+    { name: 'Bugatti',       count: 2,  logo: './Images/logo/Bugatti_logo.png' },
   ];
 
   /* ══════════════════════════════════════
@@ -26,7 +26,7 @@
   function loadCSS(){
     const link = document.createElement('link');
     link.rel   = 'stylesheet';
-    link.href  = './src/Styles/brands.css';
+    link.href  = './src/styles/brands.css';
     document.head.appendChild(link);
   }
 

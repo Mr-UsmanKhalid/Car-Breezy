@@ -16,7 +16,7 @@ $(document).ready(function () {
       make: 'BMW', model: 'X5 xDrive40i',
       year: 2024, price: 65900, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Leather', Infotainment: '12.3" iDrive', Sunroof: 'Panoramic', 'Climate Control': 'Tri-zone', 'Sound System': 'Harman Kardon' },
         exterior:   { Colour: 'Alpine White', Wheels: '21" Alloy', Headlights: 'LED Adaptive', 'Roof Rails': 'Yes', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -29,7 +29,7 @@ $(document).ready(function () {
       make: 'Mercedes-AMG', model: 'S63 E Performance',
       year: 2024, price: 186200, oldPrice: null,
       fuel: 'Hybrid Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Nappa Leather', Infotainment: '12.8" MBUX OLED', Sunroof: 'Panoramic', 'Climate Control': 'Four-zone', 'Sound System': 'Burmester 4D Surround' },
         exterior:   { Colour: 'Obsidian Black', Wheels: '21" AMG Forged Alloy', Headlights: 'Digital Light', Spoiler: 'AMG Rear Lip Spoiler', 'Parking Sensors': 'Front & Rear', Camera: '360° Camera' },
@@ -42,7 +42,7 @@ $(document).ready(function () {
       make: 'Porsche', model: '911 Carrera',
       year: 2024, price: 114400, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Leather', Infotainment: '10.9" Touchscreen', Sunroof: 'Optional', 'Climate Control': 'Dual-zone', 'Sound System': 'BOSE Surround Sound' },
         exterior:   { Colour: 'Guards Red', Wheels: '19"/20" Carrera Wheels', Headlights: 'LED Matrix', Spoiler: 'Active Rear Spoiler', 'Parking Sensors': 'Front & Rear', Camera: '360° Camera' },
@@ -55,7 +55,7 @@ $(document).ready(function () {
       make: 'Audi', model: 'Q7 55 TFSI',
       year: 2024, price: 82500, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
       specs: {
         interior:   { Seats: '7', Upholstery: 'Valcona Leather', Infotainment: '10.1" MMI', Sunroof: 'Panoramic', 'Climate Control': 'Quad-zone', 'Sound System': 'Bang & Olufsen' },
         exterior:   { Colour: 'Glacier White', Wheels: '22" Alloy', Headlights: 'Matrix LED', 'Roof Rails': 'Yes', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -72,7 +72,7 @@ $(document).ready(function () {
       make: 'Volkswagen', model: 'Golf GTI',
       year: 2024, price: 38900, oldPrice: null,
       fuel: 'Petrol', transmission: 'Manual', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Sport Cloth', Infotainment: '10" Touchscreen', Sunroof: 'Optional', 'Climate Control': 'Dual-zone', 'Sound System': 'Harman Kardon' },
         exterior:   { Colour: 'Tornado Red', Wheels: '18" Dallas Alloy', Headlights: 'LED Matrix', Spoiler: 'Rear Lip', 'Parking Sensors': 'Front & Rear', Camera: 'Reversing' },
@@ -86,7 +86,7 @@ $(document).ready(function () {
       make: 'Honda', model: 'Civic Type R',
       year: 2024, price: 42700, oldPrice: null,
       fuel: 'Petrol', transmission: 'Manual', mileage: '0 km',
-      img: './Image/Honda_civic.jpg',
+      img: './Images/Honda_civic.jpg',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Alcantara/Leather', Infotainment: '9" Honda CONNECT', Sunroof: 'None', 'Climate Control': 'Dual-zone', 'Sound System': 'Bose Premium' },
         exterior:   { Colour: 'Championship White', Wheels: '20" BBS Alloy', Headlights: 'Full LED', Spoiler: 'Rear Wing', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -100,7 +100,7 @@ $(document).ready(function () {
       make: 'Ford', model: 'Focus ST',
       year: 2024, price: 35200, oldPrice: null,
       fuel: 'Petrol', transmission: 'Manual', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Sport Fabric', Infotainment: '13.2" SYNC 4', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'B&O Audio' },
         exterior:   { Colour: 'Mean Green', Wheels: '19" ST Alloy', Headlights: 'LED', Spoiler: 'Rear Spoiler', 'Parking Sensors': 'Front & Rear', Camera: 'Reversing' },
@@ -114,7 +114,7 @@ $(document).ready(function () {
       make: 'BMW', model: '4 Series Convertible',
       year: 2024, price: 72900, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: './Image/Bmw_s4.jpg',
+      img: './Images/Bmw_s4.jpg',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Vernasca Leather', Infotainment: '12.3" iDrive 7', Sunroof: 'Soft-top Convertible', 'Climate Control': 'Dual-zone', 'Sound System': 'Harman Kardon' },
         exterior:   { Colour: 'Portimao Blue', Wheels: '19" M Sport Alloy', Headlights: 'LED Adaptive', Spoiler: 'Integrated Rear', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -128,7 +128,7 @@ $(document).ready(function () {
       make: 'Mercedes-Benz', model: 'E-Class Cabriolet',
       year: 2024, price: 88500, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1700183421717-30b3f8a9329e?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'https://Images.unsplash.com/photo-1700183421717-30b3f8a9329e?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Nappa Leather', Infotainment: '11.9" MBUX', Sunroof: 'Fabric Soft-Top', 'Climate Control': 'Tri-zone', 'Sound System': 'Burmester 3D' },
         exterior:   { Colour: 'Selenite Grey', Wheels: '20" AMG Alloy', Headlights: 'Multibeam LED', Spoiler: 'Retractable Rear', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -142,7 +142,7 @@ $(document).ready(function () {
       make: 'Tesla', model: 'Model 3 Long Range',
       year: 2024, price: 54990, oldPrice: null,
       fuel: 'Electric', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1561580125-028ee3bd62eb?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1561580125-028ee3bd62eb?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Vegan Leather', Infotainment: '15.4" Touchscreen', Sunroof: 'Glass Roof', 'Climate Control': 'Dual-zone', 'Sound System': 'Premium Audio' },
         exterior:   { Colour: 'Pearl White', Wheels: '19" Tempest Alloy', Headlights: 'LED', Spoiler: 'Optional', 'Parking Sensors': 'Ultrasonic', Camera: '360° Sentry Mode' },
@@ -156,7 +156,7 @@ $(document).ready(function () {
       make: 'Toyota', model: 'Alphard Executive',
       year: 2024, price: 71000, oldPrice: null,
       fuel: 'Hybrid Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: './Image/Toyota.jpg',
+      img: './Images/Toyota.jpg',
       specs: {
         interior:   { Seats: '7', Upholstery: 'Semi-Aniline Leather', Infotainment: '11.6" Executive Display', Sunroof: 'Panoramic', 'Climate Control': 'Quad-zone', 'Sound System': 'JBL Premium' },
         exterior:   { Colour: 'Precious Silver', Wheels: '18" Chrome Alloy', Headlights: 'LED', 'Roof Rails': 'No', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -170,7 +170,7 @@ $(document).ready(function () {
       make: 'Lexus', model: 'LC 500',
       year: 2024, price: 98700, oldPrice: null,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '0 km',
-      img: 'https://images.unsplash.com/photo-1577496550006-f24a50e9d50c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGV4dXMlMjBMQyUyMDUwMHxlbnwwfHwwfHx8MA%3D%3D',
+      img: 'https://Images.unsplash.com/photo-1577496550006-f24a50e9d50c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGV4dXMlMjBMQyUyMDUwMHxlbnwwfHwwfHx8MA%3D%3D',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Semi-Aniline Leather', Infotainment: '12.3" Touchscreen', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'Mark Levinson 13-spk' },
         exterior:   { Colour: 'Infrared', Wheels: '21" Dark Alloy', Headlights: 'LED Blade', Spoiler: 'Integrated', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -185,7 +185,7 @@ $(document).ready(function () {
       make: 'Toyota', model: 'Camry 2.5 SE',
       year: 2021, price: 24900, oldPrice: 28500,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '42,000 km',
-      img: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Fabric', Infotainment: '9" Touchscreen', Sunroof: 'None', 'Climate Control': 'Dual-zone', 'Sound System': 'JBL Premium' },
         exterior:   { Colour: 'Midnight Black', Wheels: '18" Alloy', Headlights: 'LED', Spoiler: 'Integrated', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -198,7 +198,7 @@ $(document).ready(function () {
       make: 'Honda', model: 'CR-V EX-L',
       year: 2020, price: 27500, oldPrice: 31000,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '58,000 km',
-      img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Leather', Infotainment: '7" Touchscreen', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'Premium Audio' },
         exterior:   { Colour: 'Lunar Silver', Wheels: '18" Alloy', Headlights: 'LED', 'Roof Rails': 'Yes', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -211,7 +211,7 @@ $(document).ready(function () {
       make: 'Nissan', model: 'Maxima Platinum',
       year: 2019, price: 28900, oldPrice: 34000,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '31,000 km',
-      img: './Image/Nissan.jpg',
+      img: './Images/Nissan.jpg',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Leather', Infotainment: '8" NissanConnect', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'BOSE Premium Audio' },
         exterior:   { Colour: 'Pearl White', Wheels: '19" Alloy', Headlights: 'LED', Spoiler: 'Integrated', 'Parking Sensors': 'Front & Rear', Camera: '360° Around View Monitor' },
@@ -224,7 +224,7 @@ $(document).ready(function () {
       make: 'Hyundai', model: 'i30 N',
       year: 2021, price: 22900, oldPrice: 26500,
       fuel: 'Petrol', transmission: 'Manual', mileage: '28,000 km',
-      img: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Sport Fabric', Infotainment: '10.25" Touchscreen', Sunroof: 'None', 'Climate Control': 'Dual-zone', 'Sound System': 'Bose Premium' },
         exterior:   { Colour: 'Performance Blue', Wheels: '19" N Alloy', Headlights: 'LED', Spoiler: 'Rear Wing', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -239,7 +239,7 @@ $(document).ready(function () {
       make: 'Jeep', model: 'Grand Cherokee Limited',
       year: 2020, price: 33500, oldPrice: 39000,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '47,000 km',
-      img: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Leather', Infotainment: '8.4" Uconnect', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'Alpine Premium' },
         exterior:   { Colour: 'Brilliant Black', Wheels: '20" Polished Alloy', Headlights: 'LED', 'Roof Rails': 'Yes', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -252,7 +252,7 @@ $(document).ready(function () {
       make: 'BMW', model: '3 Series 330i',
       year: 2020, price: 34200, oldPrice: 40500,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '39,000 km',
-      img: './Image/bmw_s3.jpg',
+      img: './Images/bmw_s3.jpg',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Dakota Leather', Infotainment: '10.25" iDrive', Sunroof: 'Optional', 'Climate Control': 'Tri-zone', 'Sound System': 'Harman Kardon' },
         exterior:   { Colour: 'Mineral Grey', Wheels: '18" M Sport Alloy', Headlights: 'LED', Spoiler: 'Integrated', 'Parking Sensors': 'Front & Rear', Camera: 'Reversing' },
@@ -265,7 +265,7 @@ $(document).ready(function () {
       make: 'Mazda', model: 'Mazda3 Hatchback',
       year: 2021, price: 21400, oldPrice: 25500,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '33,000 km',
-      img: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Leather', Infotainment: '8.8" Mazda Connect', Sunroof: 'Panoramic', 'Climate Control': 'Dual-zone', 'Sound System': 'BOSE' },
         exterior:   { Colour: 'Soul Red Crystal', Wheels: '18" Alloy', Headlights: 'LED', Spoiler: 'Rear Spoiler', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -278,7 +278,7 @@ $(document).ready(function () {
       make: 'Audi', model: 'A5 Cabriolet',
       year: 2019, price: 36800, oldPrice: 43000,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '51,000 km',
-      img: 'https://images.unsplash.com/photo-1637051373254-edf5c8e7a6f6?q=80&w=890&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'https://Images.unsplash.com/photo-1637051373254-edf5c8e7a6f6?q=80&w=890&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Fine Nappa Leather', Infotainment: '8.3" MMI Navigation Plus', Sunroof: 'Fabric Soft-Top', 'Climate Control': 'Dual-zone', 'Sound System': 'Bang & Olufsen' },
         exterior:   { Colour: 'Navarra Blue', Wheels: '19" Alloy', Headlights: 'LED', Spoiler: 'Integrated', 'Parking Sensors': 'Front & Rear', Camera: 'Reversing' },
@@ -291,7 +291,7 @@ $(document).ready(function () {
       make: 'Volvo', model: 'XC60 T6 Inscription',
       year: 2021, price: 38900, oldPrice: 45000,
       fuel: 'Hybrid Petrol', transmission: 'Automatic', mileage: '24,000 km',
-      img: 'https://images.unsplash.com/photo-1710866566744-efe7be345bd4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'https://Images.unsplash.com/photo-1710866566744-efe7be345bd4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Nappa Leather', Infotainment: '9" Sensus Connect', Sunroof: 'Panoramic', 'Climate Control': 'Four-zone', 'Sound System': 'Bowers & Wilkins' },
         exterior:   { Colour: 'Crystal White Pearl', Wheels: '20" Diamond Cut Alloy', Headlights: 'LED Thor Hammer', 'Roof Rails': 'Yes', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -304,7 +304,7 @@ $(document).ready(function () {
       make: 'Ford', model: 'Mustang GT',
       year: 2020, price: 38500, oldPrice: 44500,
       fuel: 'Petrol', transmission: 'Manual', mileage: '36,000 km',
-      img: 'https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1494905998402-395d579af36f?w=800&q=80',
       specs: {
         interior:   { Seats: '4', Upholstery: 'Leather/Alcantara', Infotainment: '12" SYNC 4', Sunroof: 'None', 'Climate Control': 'Dual-zone', 'Sound System': 'B&O Audio' },
         exterior:   { Colour: 'Race Red', Wheels: '19" Alloy', Headlights: 'LED', Spoiler: 'Deck Lid Spoiler', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -317,7 +317,7 @@ $(document).ready(function () {
       make: 'Lexus', model: 'ES 350 F Sport',
       year: 2020, price: 35900, oldPrice: 41000,
       fuel: 'Petrol', transmission: 'Automatic', mileage: '29,000 km',
-      img: './Image/lexus.jpg',
+      img: './Images/lexus.jpg',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Semi-Aniline Leather', Infotainment: '12.3" Touchscreen', Sunroof: 'Panoramic', 'Climate Control': 'Tri-zone', 'Sound System': 'Mark Levinson' },
         exterior:   { Colour: 'Obsidian Black', Wheels: '19" F Sport Alloy', Headlights: 'Triple LED', Spoiler: 'Integrated', 'Parking Sensors': 'Front & Rear', Camera: '360°' },
@@ -330,7 +330,7 @@ $(document).ready(function () {
       make: 'Renault', model: 'Megane RS Trophy',
       year: 2020, price: 26700, oldPrice: 32000,
       fuel: 'Petrol', transmission: 'Manual', mileage: '22,000 km',
-      img: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80',
+      img: 'https://Images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80',
       specs: {
         interior:   { Seats: '5', Upholstery: 'Alcantara/Leather', Infotainment: '9.3" RS Monitor', Sunroof: 'None', 'Climate Control': 'Dual-zone', 'Sound System': 'Focal Premium' },
         exterior:   { Colour: 'Liquid Yellow', Wheels: '19" OZ Racing Alloy', Headlights: 'Pure Vision LED', Spoiler: 'Rear Splitter', 'Parking Sensors': 'Rear', Camera: 'Reversing' },
@@ -683,7 +683,7 @@ $(document).ready(function () {
   function loadCSS(){
     const link = document.createElement('link');
     link.rel   = 'stylesheet';
-    link.href  = './src/Styles/Carlisting.css';
+    link.href  = './src/styles/Carlisting.css';
     document.head.appendChild(link);
   }
 

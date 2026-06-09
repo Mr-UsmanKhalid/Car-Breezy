@@ -7,7 +7,7 @@
     const link = document.createElement('link');
     link.id   = 'cb-navbar-styles';
     link.rel  = 'stylesheet';
-    link.href = './src/Styles/navbar.css';
+    link.href = './src/styles/navbar.css';
     document.head.appendChild(link);
   }
 
@@ -22,7 +22,7 @@
 
     <!-- Logo -->
     <a class="navbar-brand fw-bolder cb-brand logo-switch" href="#hero-component" data-scroll="hero-component">
-      <img src="./Image/logo/carb_logo1.png" alt="Car Breezy" height="30">
+      <img src="./Images/logo/carb_logo1.png" alt="Car Breezy" height="30">
     </a>
 
     <!-- Toggler -->

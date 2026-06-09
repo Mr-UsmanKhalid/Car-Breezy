@@ -14,7 +14,7 @@
     const link = document.createElement('link');
     link.id   = 'cb-hero-styles';
     link.rel  = 'stylesheet';
-    link.href = './src/Styles/hero.css';
+    link.href = './src/styles/hero.css';
     document.head.appendChild(link);
   }
 
@@ -74,7 +74,7 @@
       <div class="col-lg-7 text-center">
         <div class="car-wrapper">
           <img id="heroCar"
-               src="./Image/hero/porscheS.png"
+               src="./Images/hero/porscheS.png"
                alt="Featured Car"
                class="img-fluid car-img">
         </div>
@@ -146,20 +146,20 @@
        BRAND DATA
     ══════════════════════════════ */
     const brands = [
-      { name: 'Porsche',     img: './Image/logo/Porsche_logo.png',     title: 'Porsche P911',         text: 'German performance with luxury comfort.',                              car: './Image/hero/porscheS.png' },
-      { name: 'Mercedes',    img: './Image/logo/mercedes_logo.png',    title: 'Mercedes AMG GT 63s',  text: 'Luxury and performance with Mercedes Benz AMG.',                      car: './Image/hero/mercedess.png' },
-      { name: 'Lamborghini', img: './Image/logo/Lamborghini_logo.png', title: 'Lamborghini',          text: 'Experience the thrill of Lamborghini for unmatched performance.',     car: './Image/hero/lamborghiniS.png' },
-      { name: 'Tesla',       img: './Image/logo/Tesla_logo.png',       title: 'Tesla',                text: 'Experience the future of driving with Tesla.',                        car: './Image/hero/TeslaS.png' },
-      { name: 'Camaro',      img: './Image/logo/chervelote logo.png',  title: 'Chevrolet Camaro',     text: 'Stand out with the Camaro for iconic style and performance.',          car: './Image/hero/cherveloteS.png' },
-      { name: 'Toyota',      img: './Image/logo/Toyota_logo.png',      title: 'Toyota Corolla',       text: 'Reliable and fuel-efficient Toyota Corolla for everyday driving.',    car: './Image/hero/Toyota_CorollaS.png' },
-      { name: 'Audi',        img: './Image/logo/audi_logo.png',        title: 'Audi R8 Rental',       text: 'Experience the thrill of Audi R8 for unmatched performance.',         car: './Image/hero/Audi_R8s.png' },
-      { name: 'Rolls Royce', img: './Image/logo/RRlogo.png',           title: 'Rolls Royce',          text: 'Luxury and elegance with Rolls Royce for a prestigious experience.',  car: './Image/hero/rr.png' },
-      { name: 'Honda',       img: './Image/logo/honda_logo.png',       title: 'Honda Civic',          text: 'Reliable and fuel-efficient Honda Civic for everyday driving.',       car: './Image/hero/honda_civic.png' },
-      { name: 'Ferrari',     img: './Image/logo/Ferrari_logo.png',     title: 'Ferrari SF 90',        text: 'Cool and fast Ferrari SF 90 for an unforgettable driving experience.', car: './Image/hero/Ferrari_sf_90.png' },
-      { name: 'Nissan',      img: './Image/logo/Nissan_logo.png',      title: 'Nissan Sedan',         text: 'Family friendly Nissan for comfort and practicality.',                car: './Image/hero/nissanS.png' },
-      { name: 'McLaren',     img: './Image/logo/Mclaren_logo.png',     title: 'McLaren',              text: 'McLaren rental for unmatched performance and cutting-edge design.',   car: './Image/hero/mclarens.png' },
-      { name: 'Bugatti',     img: './Image/logo/Bugatti_logo.png',     title: 'Bugatti',              text: 'Fastest car in the world.',                                           car: './Image/hero/bugattiS.png' },
-      { name: 'BMW',         img: './Image/logo/bmw_logo.png',         title: 'BMW M3',               text: 'Popular BMW M3 rental for performance and style.',                    car: './Image/hero/bmwM3.png' },
+      { name: 'Porsche',     img: './Images/logo/Porsche_logo.png',     title: 'Porsche P911',         text: 'German performance with luxury comfort.',                              car: './Images/hero/porscheS.png' },
+      { name: 'Mercedes',    img: './Images/logo/mercedes_logo.png',    title: 'Mercedes AMG GT 63s',  text: 'Luxury and performance with Mercedes Benz AMG.',                      car: './Images/hero/mercedess.png' },
+      { name: 'Lamborghini', img: './Images/logo/Lamborghini_logo.png', title: 'Lamborghini',          text: 'Experience the thrill of Lamborghini for unmatched performance.',     car: './Images/hero/lamborghiniS.png' },
+      { name: 'Tesla',       img: './Images/logo/Tesla_logo.png',       title: 'Tesla',                text: 'Experience the future of driving with Tesla.',                        car: './Images/hero/TeslaS.png' },
+      { name: 'Camaro',      img: './Images/logo/chervelote logo.png',  title: 'Chevrolet Camaro',     text: 'Stand out with the Camaro for iconic style and performance.',          car: './Images/hero/cherveloteS.png' },
+      { name: 'Toyota',      img: './Images/logo/Toyota_logo.png',      title: 'Toyota Corolla',       text: 'Reliable and fuel-efficient Toyota Corolla for everyday driving.',    car: './Images/hero/Toyota_CorollaS.png' },
+      { name: 'Audi',        img: './Images/logo/audi_logo.png',        title: 'Audi R8 Rental',       text: 'Experience the thrill of Audi R8 for unmatched performance.',         car: './Images/hero/Audi_R8s.png' },
+      { name: 'Rolls Royce', img: './Images/logo/RRlogo.png',           title: 'Rolls Royce',          text: 'Luxury and elegance with Rolls Royce for a prestigious experience.',  car: './Images/hero/rr.png' },
+      { name: 'Honda',       img: './Images/logo/honda_logo.png',       title: 'Honda Civic',          text: 'Reliable and fuel-efficient Honda Civic for everyday driving.',       car: './Images/hero/honda_civic.png' },
+      { name: 'Ferrari',     img: './Images/logo/Ferrari_logo.png',     title: 'Ferrari SF 90',        text: 'Cool and fast Ferrari SF 90 for an unforgettable driving experience.', car: './Images/hero/Ferrari_sf_90.png' },
+      { name: 'Nissan',      img: './Images/logo/Nissan_logo.png',      title: 'Nissan Sedan',         text: 'Family friendly Nissan for comfort and practicality.',                car: './Images/hero/nissanS.png' },
+      { name: 'McLaren',     img: './Images/logo/Mclaren_logo.png',     title: 'McLaren',              text: 'McLaren rental for unmatched performance and cutting-edge design.',   car: './Images/hero/mclarens.png' },
+      { name: 'Bugatti',     img: './Images/logo/Bugatti_logo.png',     title: 'Bugatti',              text: 'Fastest car in the world.',                                           car: './Images/hero/bugattiS.png' },
+      { name: 'BMW',         img: './Images/logo/bmw_logo.png',         title: 'BMW M3',               text: 'Popular BMW M3 rental for performance and style.',                    car: './Images/hero/bmwM3.png' },
     ];
 
     /* ══════════════════════════════

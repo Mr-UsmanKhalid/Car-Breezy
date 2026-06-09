@@ -9,7 +9,7 @@
   const link = document.createElement("link");
   link.rel  = "stylesheet";
   link.type = "text/css";
-  link.href = "./src/Styles/footer.css";
+  link.href = "./src/styles/footer.css";
   document.head.appendChild(link);
 
   // ── Ticker + Visitor Styles ────────────────────────────────────
@@ -157,7 +157,7 @@
 
           <!-- Brand Column -->
           <div class="footer-brand-col">
-            <img src="./Image/logo/carb_logo1.png" alt="CarBreezy" class="footer-logo" height="40">
+            <img src="./Images/logo/carb_logo1.png" alt="CarBreezy" class="footer-logo" height="40">
             <p class="footer-tagline">Your trusted partner in finding the perfect vehicle.</p>
           </div>
 

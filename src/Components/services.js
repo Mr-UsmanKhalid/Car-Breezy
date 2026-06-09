@@ -5,7 +5,7 @@
     const link = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = './src/Styles/services.css';
+    link.href = './src/styles/services.css';
     document.head.appendChild(link);
   }
 
@@ -18,7 +18,7 @@
       text:     'Hit the road in style. Choose from our curated fleet of premium and everyday vehicles — flexible terms, zero hassle.',
       price:    'From $99',
       unit:     '/day',
-      img:      './Image/Services/rent-car.jpg',
+      img:      './Images/Services/rent-car.jpg',
       alt:      'Rent Car',
     },
     {
@@ -28,7 +28,7 @@
       text:     'Showroom-ready results every time. Our certified detailers restore your car\'s shine inside and out.',
       price:    'From $29',
       unit:     '/wash',
-      img:      './Image/Services/car-wash.jpg',
+      img:      './Images/Services/car-wash.jpg',
       alt:      'Car Wash',
     },
     {
@@ -38,7 +38,7 @@
       text:     'Certified technicians, quality parts, honest pricing. Get back on the road with confidence.',
       price:    'From $49',
       unit:     '/visit',
-      img:      './Image/Services/Repair-car.avif',
+      img:      './Images/Services/Repair-car.avif',
       alt:      'Car Repair',
     },
   ];

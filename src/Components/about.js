@@ -3,7 +3,7 @@
   function loadCSS() {
     const link = document.createElement('link');
     link.rel   = 'stylesheet';
-    link.href  = './src/Styles/about.css';
+    link.href  = './src/styles/about.css';
     document.head.appendChild(link);
   }
 
